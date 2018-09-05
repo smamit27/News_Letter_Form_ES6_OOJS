@@ -51,7 +51,7 @@ html body {
 	appearance: none;
 	border: 0px;
 	font-size: 18px;
-	padding: 15px 8px;
+	padding: 12px 8px;
 	outline: none;
 	border-radius: 5px;
 	width: 90%;
@@ -110,20 +110,31 @@ html body {
 }
 
 .btn__send {
-	background: #fff;
-	color: #979797;
-	margin: 30px auto;
-	height: 50px;
+    background: #fff;
+    color: #979797;
+    margin: 65px auto;
+    height: 45px;
+    letter-spacing: 0.23px;
 }
 
 .btn__add {
 	color: #fff;
 	background: transparent;
 	margin-top: 30px;
-	height: 50px;
+	height: 45px;
 	margin-left: 25px;
 	letter-spacing: 0.23px;
 }
+.news_hidden {
+	display: none;
+}
+#news__hide-message {
+	color: #fff;
+	font-size: 18px;
+
+}
+
+
 
 
 
