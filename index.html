@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>News Letter Form</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="src/app.css">
-</head>
-<body>
-
-  <body>
-    <div class="news">
-        <header class="news__header">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>News Letter Form</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="src/app.css">
+   </head>
+   <body>
+      <div class="news">
+         <header class="news__header">
             <h1 class="news__header-h1">Spread the word !</h1>
             <p class="news__header-p">Our recipes are awesome,signup to our newsletter and invite friends to join the gilled
-                prawn cult
+               prawn cult
             </p>
-        </header>
-        <section class="news__section">
-            <div id="news__list">
-            </div>
-            <div class="news__line"></div>
-            <form id="news__letter">
-                <div class="news__inline-list">
-                    <label for="name" class="news__inline-label">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Samantha" />
-                </div>
-                <div class="news__inline-list">
-                    <label for="surname" class="news__inline-label">Surname</label>
-                    <input type="text" id="surname" name="surname" placeholder="Smith" />
-                </div>
-                <div class="news__inline-list">
-                    <label for="email" class="news__inline-label">Email address </label>
-                    <input type="text" id="email" name="email" placeholder="Samantha@Smith.com">
-                </div>
-                <div class="news__inline-list">
-                    <button type="submit" class="btn btn__add">Add Friend </button>
-                </div>
-            </form>
-        </section>
-        <footer>
-            <div class="news__align">
-                <button class="btn btn__send ">Send <span class="fa fa-arrow-right fa-fw"></span>
-                </button>
-            </div>
-        </footer>
-    </div>
-  
-  <script src="build/app.bundle.js"></script>
-</body>
+         </header>
+         <form id="news__letter">
+            <main>
+               <div class="news__section">
+                  <div id="news__list"></div>
+                  <div class="news__line"></div>
+                  <div id="news__inline">
+                        <div class="news__inline-list" >
+                              <label for="name" class="news__inline-label">Name</label>
+                        <input type="text" id="name" name="name" />
+                              <span id="news__validate-name" class="news_hidden">Please Enter Only Name</span>
+                        </div>
+                        <div class="news__inline-list">
+                        <label for="surname" class="news__inline-label">Surname</label>
+                              <input type="text" id="surname" name="surname"/>
+                         </div>
+                        <div class="news__inline-list">
+                        <label for="email" class="news__inline-label">Email address </label>
+                        <input type="text" id="email" name="email" />
+                        <span id="news__validate-email" class="news_hidden">Please enter a valid email address</span>
+                        </div>
+                        <div class="news__inline-list">
+                        <button type="submit" class="btn btn__add">Add Friend </button>
+                        </div>
+                        <div class="news__align">
+                              <button class="btn btn__send " id="news__send" >Send <span class="fa fa-arrow-right fa-fw"></span>
+                              </button>
+                        </div>
+                  </div>
+                  <div id="news__hide-message" class="news_hidden">We can not add more than 5 Friend </div>
+
+               </div>
+            </main>
+         </form>
+      </div>
+      <script src="build/app.bundle.js"></script>
+   </body>
 </html>
